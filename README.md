@@ -1,2 +1,2 @@
-# project-name
-A description
+Orion Mathematics
+Java computational and symbolic math library
