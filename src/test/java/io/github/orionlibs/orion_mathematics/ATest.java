@@ -30,4 +30,13 @@ public class ATest
     {
         return this.getClass().getResourceAsStream(fileLocation);
     }
+
+
+    protected void assertApproximate(double expected, double actual, double tolerance)
+    {
+        if(Math.abs(actual - expected) > tolerance)
+        {
+            new AssertionError("" + expected + "does not approximate " + actual + "given tolerance " + tolerance);
+        }
+    }
 }
